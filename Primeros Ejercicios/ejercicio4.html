@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/ xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio 4</title>
+	<script type="text/javascript">
+		var valores=[true,5,false,"hola","adios",2];
+		//Determinar cual de los dos elementos de texto es mayor
+		//Si el primero es mayor que el segundo saldrá true, en caso contrario false
+		var resultado=valores[4]>valores[3];
+		alert(resultado);
+
+		//Utilizando exclusivamente los dos valores booleanos del array, determinar los operadores
+		//necesarios para obtener un resultado true y otro resultado false
+
+		//Para obtener true usaremos el operador OR
+		var valor1 = valores[0];
+		var valor2 = valores[2];
+
+		var resultado=valor1||valor2;
+		alert(resultado);
+
+		//Para obtener false usaremos el operador AND
+		resultado=valor1&&valor2;
+		alert(resultado);
+
+		//Operaciones matemáticas
+		alert("5 + 2 = "+(valores[1]+valores[5]));
+		alert("5 - 2 = "+(valores[1]-valores[5]));
+		alert("5 * 2 = "+(valores[1]*valores[5]));
+		alert("5 / 2 = "+(valores[1]/valores[5]));
+		alert("5 % 2 = "+(valores[1]%valores[5]));
+
+	</script>
+</head>
+<body>
+	<h1>Ejercicio 4</h1>
+	<p>Operadores</p>
+	<p>Autor: Miguel Ángel López Moyano</p>
+</body>
+</html>
