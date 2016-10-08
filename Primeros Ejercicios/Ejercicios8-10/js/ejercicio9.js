@@ -1,3 +1,5 @@
+/* Comprueba si la cadena pasada como argumento lleva sólo mayúsculas, solo minúsculas o
+   bien lleva tanto mayúsculas como minúsculas */
 function mayusculasOMinusculas(cadena){
 	if(isNaN(cadena)){
 		if(cadena == cadena.toUpperCase())
