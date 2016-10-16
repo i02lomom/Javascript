@@ -4,18 +4,19 @@
 
 	Autor: Miguel Angel López Moyano */
 
-var num = prompt("Introduzca un número: ");
-var numero = num.split(".");
+{
+	let num = prompt("Introduzca un número con decimales: ");
+	let numero = num.split(".");
 
-if(num=>0 && num<10){
-	var digitos = numero[1].length;
-
-	if(numero.length-1==0)
-		console.log("El número no tiene decimales");
-	else{
-		console.log("El numero "+numero+" tiene "+ digitos +" decimales");
-		console.log("El número invertido es: "+numero.reverse());
+	if(num=>0 && num<10){
+		if(numero.length-1==0)
+			console.log("El número no tiene decimales");
+		else{
+			let digitos = numero[1].length;
+			console.log("El numero "+numero+" tiene "+ digitos +" decimales");
+			console.log("El número invertido es: "+numero.reverse());
+		}
 	}
+	else
+		console.log("El número no es válido");
 }
-else
-	console.log("El número no es válido");
