@@ -8,24 +8,21 @@
 	let numero = prompt("Introduzca un número entero: ");
 
 	let comprobarDatos = function (numero){
-		let flagError=false;
-
 		if(numero<1)
-			flagError=true;
-
+			return true;
 		if(isNaN(numero))
-			flagError=true;
-
-		return flagError;
+			return true;
+		if(numero.length==0)
+			return true;
+		return false;
 	}
 
-	let error=comprobarDatos(numero);
-
-	if(!error){
+	if(!comprobarDatos(numero)){
+		numero=parseInt(numero);
 		for(let i=1;i<=numero;i++)
 			console.log(i);
 	}
 
 	else
-		console.log("Se ha introducido algún dato erróneo");
+		console.log("Se ha introducido un número erróneo");
 }

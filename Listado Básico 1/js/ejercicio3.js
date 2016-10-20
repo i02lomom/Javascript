@@ -11,7 +11,7 @@
 		do{
 			numero = prompt("Introduzca un número: ");
 
-			if(isNaN(numero)){
+			if(isNaN(numero) || numero.length==0){
 				console.log("Error. No has introducido un número");
 			}
 			else

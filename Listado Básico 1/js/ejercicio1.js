@@ -4,15 +4,15 @@
 	Autor: Miguel Angel López Moyano */
 
 {
-	function generarAleatorio(){
+	let generarAleatorio=function(){
 		return Math.round(Math.random() * 100);
 	}
 
-	function deseaContinuar(){
+	let deseaContinuar=function(){
 		do{
 			var respuesta=prompt("¿Desea jugar otra vez? (s/n): ");
 
-			if(isNaN(respuesta)){
+			if(isNaN(respuesta) && respuesta.length!=0){
 				respuesta=respuesta.toLowerCase();
 
 				if(respuesta!='s' && respuesta!='n')

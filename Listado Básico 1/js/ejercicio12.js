@@ -8,12 +8,13 @@
 	let contador=0;
 
 	do{
-		numero=parseInt(prompt("Introduzca un número (0 o 1): "));
-		if(numero<0 || numero>2){
+		numero=prompt("Introduzca un número (0 o 1): ");
+		if(numero<0 || numero>2 || isNaN(numero) || numero.length==0){
 			console.log("Error. El numero introducido es distinto de cero o uno");
 		}
 
-		else{				
+		else{
+			numero=parseInt(numero);
 			if(numero==0){
 				contador++;
 			}

@@ -4,32 +4,37 @@
 	Autor: Miguel Angel López Moyano */
 
 {
-	let dia = parseInt(prompt("Introduzca el día: "));
-	let mes= parseInt(prompt("Introduzca el mes: "));
-	let anno = parseInt(prompt("Introduzca el año: "));
+	let dia = prompt("Introduzca el día: ");
+	let mes= prompt("Introduzca el mes: ");
+	let anno = prompt("Introduzca el año: ");
 
-	let comprobarDatos = function (dia,mes,anno){
-		var flagError=false;
+	if(isNaN(dia) || dia.length==0  ||
+		isNaN(mes) || mes.length==0 ||
+		isNaN(anno) || anno.length==0){
 
-		if(dia<=0 || dia>31)
-			flagError=true;
-
-		if(mes<=0 || mes>12)
-			flagError=true;
-
-		if(anno<0)
-			flagError=true;
-		return flagError;
+		console.log("Error. Se ha introducido un dato erróneo");
 	}
 
-	let error=comprobarDatos(dia,mes,anno);
+	else{
+		let comprobarDatos = function (dia,mes,anno){
+			if(dia<=0 || dia>31)
+				return true;
+
+			if(mes<=0 || mes>12)
+				return true;
+
+			if(anno<0)
+				return true;
+			return false;
+		}
+		
+		if(!comprobarDatos(dia,mes,anno)){
+			let fecha = new Date(anno, mes-1, dia, 0, 0, 0, 0);
+			fecha.setDate(fecha.getDate() + 1);
+			console.log("El día siguiente de la fecha indicada es: "+fecha);
+		}
+		else
+			console.log("Se ha introducido algún dato erróneo");
+	}
 	
-	if(!error){
-		let fecha = new Date(anno, mes-1, dia, 0, 0, 0, 0);
-		fecha.setDate(fecha.getDate() + 1);
-		console.log("El día siguiente de la fecha indicada es: "+fecha);
-	}
-
-	else
-		console.log("Se ha introducido algún dato erróneo");	
 }

@@ -5,19 +5,16 @@
 	Autor: Miguel Angel López Moyano */
 
 {
-	let numero = parseInt(prompt("Introduzca un número de 0 a 99: "));
+	let numero = prompt("Introduzca un número de 0 a 99: ");
 
 	let comprobarDato = function (numero){
-		var flagError=false;
-		if(numero<0 || numero>99){
-			flagError=true;
+		if(numero<0 || numero>99 || isNaN(numero) || numero.length==0){
+			return true;
 		}
-		return flagError;
+		return false;
 	}
 
-	let error=comprobarDato(numero);
-
-	if(!error){
+	if(!comprobarDato(numero)){
 		let unidades=function(numero){
 			switch(numero){
   				case 0:
@@ -57,30 +54,36 @@
 
 			switch(decenas){
 				case 1:
-					switch(unidad){
-						case 0: 
-							return "DIEZ";
-		        		case 1: 
-		        			return "ONCE";
-		        		case 2: 
-		        			return "DOCE";
-		        		case 3: 
-		        			return "TRECE";
-		        		case 4: 
-		        			return "CATORCE";
-		        		case 5: 
-		        			return "QUINCE";
-		        		default: 
-		        			return "DIECI" + unidades(unidad);
+					let decenasEn1=function(unidad){
+						switch(unidad){
+							case 0: 
+								return "DIEZ";
+			        		case 1: 
+			        			return "ONCE";
+			        		case 2: 
+			        			return "DOCE";
+			        		case 3: 
+			        			return "TRECE";
+			        		case 4: 
+			        			return "CATORCE";
+			        		case 5: 
+			        			return "QUINCE";
+			        		default: 
+			        			return "DIECI" + unidades(unidad);
+						}
 					}
+					return decenasEn1(unidad);
 
 				case 2:
-					switch(unidad){
+					let decenasEn2=function(unidad){
+						switch(unidad){
 						case 0:
 							return "VEINTE";
 						default:
 							return "VEINTI" + unidades(unidad);
+						}
 					}
+					return decenasEn2(unidad);
 
 				case 3:
 					return decenasY("TREINTA", unidad);
