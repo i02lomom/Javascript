@@ -4,33 +4,34 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Ejercicio 4</title>
 	<script type="text/javascript">
-		var valores=[true,5,false,"hola","adios",2];
-		//Determinar cual de los dos elementos de texto es mayor
-		//Si el primero es mayor que el segundo saldrá true, en caso contrario false
-		var resultado=valores[4]>valores[3];
-		alert(resultado);
+		{
+			let valores=[true,5,false,"hola","adios",2];
+			//Determinar cual de los dos elementos de texto es mayor
+			//Si el primero es mayor que el segundo saldrá true, en caso contrario false
+			let resultado=valores[4]>valores[3];
+			alert(resultado);
 
-		//Utilizando exclusivamente los dos valores booleanos del array, determinar los operadores
-		//necesarios para obtener un resultado true y otro resultado false
+			//Utilizando exclusivamente los dos valores booleanos del array, determinar los operadores
+			//necesarios para obtener un resultado true y otro resultado false
 
-		//Para obtener true usaremos el operador OR
-		var valor1 = valores[0];
-		var valor2 = valores[2];
+			//Para obtener true usaremos el operador OR
+			let valor1 = valores[0];
+			let valor2 = valores[2];
 
-		var resultado=valor1||valor2;
-		alert(resultado);
+			let resultado=valor1||valor2;
+			alert(resultado);
 
-		//Para obtener false usaremos el operador AND
-		resultado=valor1&&valor2;
-		alert(resultado);
+			//Para obtener false usaremos el operador AND
+			resultado=valor1&&valor2;
+			alert(resultado);
 
-		//Operaciones matemáticas
-		alert("5 + 2 = "+(valores[1]+valores[5]));
-		alert("5 - 2 = "+(valores[1]-valores[5]));
-		alert("5 * 2 = "+(valores[1]*valores[5]));
-		alert("5 / 2 = "+(valores[1]/valores[5]));
-		alert("5 % 2 = "+(valores[1]%valores[5]));
-
+			//Operaciones matemáticas
+			alert("5 + 2 = "+(valores[1]+valores[5]));
+			alert("5 - 2 = "+(valores[1]-valores[5]));
+			alert("5 * 2 = "+(valores[1]*valores[5]));
+			alert("5 / 2 = "+(valores[1]/valores[5]));
+			alert("5 % 2 = "+(valores[1]%valores[5]));
+		}
 	</script>
 </head>
 <body>

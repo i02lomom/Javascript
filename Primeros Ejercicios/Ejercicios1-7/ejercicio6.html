@@ -4,22 +4,24 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Ejercicio 6</title>
 	<script type="text/javascript">
-		var letras=['T','R','W','A','G','M','Y','F','P','D','X','B','N','J',
-		'Z','S','Q','V','H','L','C','K','E','T'];
-		var numero=prompt("Introduzca el número del DNI:");
-		var letra=prompt("Introduzca la letra del DNI:");
+		{
+			let letras=['T','R','W','A','G','M','Y','F','P','D','X','B','N','J',
+			'Z','S','Q','V','H','L','C','K','E','T'];
+			let numero=prompt("Introduzca el número del DNI:");
+			let letra=prompt("Introduzca la letra del DNI:");
 
-		letra=letra.toUpperCase();
-		if(numero<0 || numero>99999999) {
-			alert("Número de DNI inválido");
-		}
-		else {
-			var letraObtenida=letras[numero%23];
-			if(letraObtenida!=letra) {
-				alert("Uno de los dos datos no es correcto");
+			letra=letra.toUpperCase();
+			if(numero<0 || numero>99999999) {
+				alert("Número de DNI inválido");
 			}
 			else {
-				alert("Los dos datos son correctos");
+				let letraObtenida=letras[numero%23];
+				if(letraObtenida!=letra) {
+					alert("Uno de los dos datos no es correcto");
+				}
+				else {
+					alert("Los dos datos son correctos");
+				}
 			}
 		}
 	</script>
