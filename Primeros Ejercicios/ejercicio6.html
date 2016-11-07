@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/ xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio 6</title>
+	<script type="text/javascript">
+		var letras=['T','R','W','A','G','M','Y','F','P','D','X','B','N','J',
+		'Z','S','Q','V','H','L','C','K','E','T'];
+		var numero=prompt("Introduzca el número del DNI:");
+		var letra=prompt("Introduzca la letra del DNI:");
+
+		letra=letra.toUpperCase();
+		if(numero<0 || numero>99999999) {
+			alert("Número de DNI inválido");
+		}
+		else {
+			var letraObtenida=letras[numero%23];
+			if(letraObtenida!=letra) {
+				alert("Uno de los dos datos no es correcto");
+			}
+			else {
+				alert("Los dos datos son correctos");
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Ejercicio 6</h1>
+	<p>Letra del D.N.I.</p>
+	<p>Autor: Miguel Ángel López Moyano</p>
+</body>
+</html>
