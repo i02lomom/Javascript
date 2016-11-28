@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Miguel Angel López Moyano</title>
+	<script src="js/Matriz.js"></script>
+	<script src="js/operacionesMatrices.js"></script>
+</head>
+<body>
+	<noscript><p>Esta página requiere ejecutar Javascript. Por favor active la ejecución de scripts.</p></noscript>
+	<h1>Operaciones con matrices</h1>
+	
+	<form action="#">
+        Tipo de operación:</br>
+        <select id='operacion'>
+            <option value='sumar'>Sumar</option>
+            <option value='restar'>Restar</option>
+            <option value='multiplicar'>Multiplicar</option>
+            <option value='trasponer'>Trasponer</option>
+        </select></br></br>
+
+        <div id="tamano"></div></br>
+        <div id="errorTamano"></div></br>
+        <div id="valores">
+
+        	<div id="valores_matriz1"></div></br>
+        	<div id="valores_matriz2"></div></br>
+        </div>
+
+        <div id="enviar"></div>
+         <div id="errorValores"></div>
+    </form></br>
+
+    <h2 id="resultado"></h2>
+</body>
+</html>

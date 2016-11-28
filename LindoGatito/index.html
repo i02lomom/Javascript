@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Miguel Angel López Moyano</title>
+	<link rel="stylesheet" type="text/css" href="css/lindoGatito.css">
+	<script src="js/lindoGatito.js"></script>
+</head>
+<body>
+	<noscript><p>Esta página requiere ejecutar Javascript. Por favor active la ejecución de scripts.</p></noscript>
+	<h1>Lindo Gatito</h1>
+	
+	<div id="formulario">
+		<div id="foto">
+			<img src="img/gatito.jpg">
+		</div>
+
+	    <h2>Crear gato</h2>
+	    
+		Nombre: <input type="text" id="nombre" placeholder="Nombre del gato" required><br/>
+		Fecha de nacimiento: <input type="date" id="fechaNac" placeholder="Fecha de nacimiento" required><br/>
+		Peso: <input type="number" min="1" max="15" id="peso" placeholder="Peso en Kg" required><br/>
+		Raza: <select id="raza"><br/><br/>
+			<option value="siames">Siamés</option>
+			<option value="persa">Persa</option>
+			<option value="bengala">Bengala</option>
+			<option value="angora">Angora</option>
+			<option value="egipcio">Egipcio</option>
+		</select>
+		<br/><br/><br/>
+
+		<input type="button" id="crearGato" value="Crear gato"><br/><br/>
+		<div id="error">
+		</div>
+	</div>
+</body>
+</html>
