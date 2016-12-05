@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Miguel Angel López Moyano</title>
+	<script type="text/javascript" src="js/validar.js"></script>
+	<script type="text/javascript" src="js/formularioCompleto.js"></script>
+</head>
+<body>
+	<noscript><p>Esta página requiere ejecutar Javascript. Por favor active la ejecución de scripts.</p></noscript>
+	<h1>Formulario completo</h1>
+	
+	<div id="formulario">
+		<form method="post" action="index.html">
+			<p>Nombre: <input type="text" id="nombre" placeholder="Nombre" autofocus="">
+	        <span id="errorNombre"></span></p>
+
+	        <p>Apellidos: <input type="text" id="apellidos" placeholder="Apellidos">
+	        <span id="errorApellidos"></span></p>
+
+	        <p>Sexo:<input type="radio" name="sexo" id="hombre" value="hombre" checked>Hombre
+	        <input type="radio" name="sexo" id="mujer" value="mujer">Mujer
+	        <span id="errorSexo"></span></p>
+
+	        <p>Nivel Estudios: 
+	        	<select name="educacion">
+	                <option value="basicos">Básicos</option>
+	                <option value="secundaria">Secundaria</option>
+	                <option value="universitario">Universitarios/FP</option>
+	            </select>
+	        </p>
+
+	        <p>Idiomas:<input type="checkbox" class="idiomas" id="castellano" value="castellano">Castellano
+	            <input type="checkbox"  class="idiomas" id="ingles" value="ingles">Inglés
+	            <input type="checkbox" class="idiomas" id="aleman" value="aleman">Alemán
+	            <input type="checkbox" class="idiomas" id="frances" value="frances">Francés
+	        <span id="errorIdioma"></span></p> 
+
+			<p>Peso: <input type="text" id="peso">
+            <span id="errorPeso"></span></p>
+
+            <p>Mail: <input type="text" id="email" placeholder="usuario@dominio.com">
+            <span id="errorEmail"></span></p>
+
+            <p>DNI: <input type="text" id="dni" placeholder="12345678A">
+            <span id="errorDni"></span></p>
+
+            <p>Fecha Nacimiento: <input type="text" id="fechaNac" placeholder="dd-mm-yyyy">
+            <span id="errorFechaNac"></span></p>
+
+            <p>Teléfono: <input type="text" id="telefono" placeholder="95XXXXXXX">
+            <span id="errorTelefono"></span></p>
+
+            <p>Cuenta Bancaria:<input type="text" id="cuenta" placeholder="ESXX XXXX XXXX XXXX XXXX XXXX">
+            <span id="errorCuenta"></span></p> 
+
+            <p>URL: <input type="text" id="url" placeholder="Ej. dominio.com">
+            <span id="errorUrl"></span></p>
+
+	        <p><input type="button" id="submit" value="Enviar">    
+	        <h3 id="formularioOk"></h3>
+	        </p>
+        </form>
+		
+	</div>
+</body>
+</html>
