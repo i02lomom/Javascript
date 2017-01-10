@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/validar.js"></script>
+	<script type="text/javascript" src="js/ejEmpleado.js"></script>
+	<script type="text/javascript" src="js/empleado.js"></script>
+	<title>Miguel Angel López Moyano</title>
+</head>
+<body>
+	<h1 style="text-align:center;">Miguel Ángel López Moyano</h1>
+	<h2 style="text-align:center;">Examen diciembre 2016</h2>
+
+	<div style="text-align:center;" id="formulario">
+		<form action="">
+			<p><label>Nombre </label>
+			<input type="text" id="inputNombre" placeholder="Nombre">
+			<span id="errorNombre"></span></p>
+
+			<p><label>Apellidos </label>
+			<input type="text" id="inputApellidos" placeholder="Apellidos">
+			<span id="errorApellidos"></span></p>
+
+			<p><label>Fecha de nacimiento </label>
+			<input type="text" id="inputFecha" placeholder="Fecha de nacimiento">
+			<span id="errorFecha"></span></p>
+
+			<p><label>DNI </label>
+			<input type="text" id="inputDni" placeholder="DNI">
+			<span id="errorDni"></span></p>
+
+			<p><label>Acepto la condiciones de uso </label><input type="checkbox" id="check">
+			<span id="errorCheck"></span></p>
+
+			<p><input type="button" id="crear" value="Crear">
+			<input type="button" id="limpiar" value="Limpiar">
+			<span id="errorFormulario"></span></p>
+		</form>
+	</div>
+
+	<div style="text-align:center;" id="info">
+
+	</div>
+</body>
+</html>
