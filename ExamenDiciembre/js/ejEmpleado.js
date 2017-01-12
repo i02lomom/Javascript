@@ -3,8 +3,6 @@
 {
 	let inputNombre;
 	let errorNombre;
-	let inputApellidos;
-	let errorApellidos;
 	let inputFecha;
 	let errorFecha;
 	let inputDni;
@@ -19,10 +17,6 @@
 
 	let comprobarNombre=function(){
 		errorNombre.innerHTML=expresiones.validar(inputNombre.value,"nombre");
-	}
-
-	let comprobarApellidos=function(){
-		errorApellidos.innerHTML=expresiones.validar(inputApellidos.value,"apellidos");
 	}
 
 	let comprobarFecha=function(){
@@ -44,19 +38,17 @@
 		let bandera=false;
 
 		comprobarNombre();
-		comprobarApellidos();
 		comprobarFecha();
 		comprobarDni();
 		comprobarCheck();
 
-		if(errorNombre.textContent!="" || errorApellidos.textContent!="" 
-			|| errorFecha.textContent!="" || errorDni.textContent!="" || errorCheck.textContent!="")
+		if(errorNombre.textContent!="" || errorFecha.textContent!="" || errorDni.textContent!="" || errorCheck.textContent!="")
 			bandera=true;
 
 		if(bandera)
 			errorFormulario.innerHTML="Uno de los campos es incorrecto";
 		else{
-			empleado=new Empleado(inputNombre.value,inputApellidos.value,inputFecha.value,inputDni.value);
+			empleado=new Empleado(inputNombre.value,inputFecha.value,inputDni.value);
 			ventana=window.open("datosEmpleado.html","Datos Empleado","witdh=600,height=400,top=0,left=0");
 			limpiarTodo();
 		}
@@ -69,8 +61,6 @@
 	let limpiarTodo=function(){
 		inputNombre.value="";
 		errorNombre.textContent="";
-		inputApellidos.value="";
-		errorApellidos.textContent="";
 		inputFecha.value="";
 		errorFecha.textContent="";
 		inputDni.value="";
@@ -82,8 +72,6 @@
 	let init=function(){
 		inputNombre=document.getElementById("inputNombre");
 		errorNombre=document.getElementById("errorNombre");
-		inputApellidos=document.getElementById("inputApellidos");
-		errorApellidos=document.getElementById("errorApellidos");
 		inputFecha=document.getElementById("inputFecha");
 		errorFecha=document.getElementById("errorFecha");
 		inputDni=document.getElementById("inputDni");
@@ -95,7 +83,6 @@
 		limpiar=document.getElementById("limpiar");
 
 		inputNombre.addEventListener("blur",comprobarNombre);
-		inputApellidos.addEventListener("blur",comprobarApellidos);
 		inputFecha.addEventListener("blur",comprobarFecha);
 		inputDni.addEventListener("blur",comprobarDni);
 		inputCheck.addEventListener("blur",comprobarCheck);

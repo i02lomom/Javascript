@@ -1,16 +1,11 @@
-let Empleado=function(nombre,apellidos,fecha,dni){
+let Empleado=function(nombre,fecha,dni){
 	this.nombre=nombre;
-	this.apellidos=apellidos;
 	this.fecha=fecha;
 	this.dni=dni;
 }
 
 Empleado.prototype.getNombre=function(){
 	return this.nombre;
-}
-
-Empleado.prototype.getApellidos=function(){
-	return this.apellidos;
 }
 
 Empleado.prototype.getFecha=function(){
