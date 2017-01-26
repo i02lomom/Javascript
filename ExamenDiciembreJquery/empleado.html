@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+	<script src="js/ejEmpleado.js" type="text/javascript"></script>
+	<script src="js/empleado.js" type="text/javascript"></script>
+
+	
+	<title>Miguel Angel López Moyano</title>
+</head>
+<body>
+	<h1 style="text-align:center;">Miguel Ángel López Moyano</h1>
+	<h2 style="text-align:center;">Examen diciembre 2016</h2>
+
+	<div style="text-align:center;">
+		<form id="formulario" action="">
+			<p><label>Nombre </label>
+			<input id="inputNombre" type="text" data-validation="custom" data-validation-regexp="^([A-ZÁÉÍÓÚ][a-zñáéíóú]{3,})+(\s[A-ZÁÉÍÓÚ][a-zñáéíóú]{3,})+$">
+			</p>
+
+			<p><label>Fecha de nacimiento </label>
+			<input id="inputFecha" type="text" data-validation="birthdate" data-validation-format="dd/mm/yyyy">
+			</p>
+
+			<p><label>DNI </label>
+			<input id="inputDni" type="text" data-validation="custom" data-validation-regexp="^(\d{8})([-]?)[A-Z]$">
+			</p>
+
+			<p><label>Acepto la condiciones de uso </label>
+			<input type="checkbox" name="check" data-validation="checkbox_group" data-validation-qty="1">
+			</p>
+
+			<div>
+				<input type="button" id="crear" value="Crear" disabled>
+				<input class="btn" type="reset" id="limpiar" value="Limpiar">
+			</div>
+		</form>
+	</div>
+
+	<div style="text-align:center;" id="info">
+
+	</div>
+</body>
+</html>
