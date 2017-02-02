@@ -1,0 +1,108 @@
+body {
+	background: #EEEEEE;
+	font-family: "Trebuchet MS", sans-serif;
+	margin: 0;
+	padding-left: 0.5em;
+	padding-top: 0.5em;
+	width: 50%;
+}
+
+button {
+	padding: 0.5em;
+	cursor: pointer;
+}
+
+header {
+	background: #C9C9C9;
+	box-shadow: 0px 0px 10px #000000;
+}
+
+h1,h2 {
+	margin: 0;
+	color: #3383BB;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;
+}
+
+#tabs {
+	margin: 0 auto;
+	margin-bottom: 1em;
+	width: 98%;	
+}
+
+p {
+	text-align: justify;
+}
+
+#tabs h1{
+	text-align: left;
+}
+
+#tabs>ul{
+	text-align: center;
+	list-style: none;
+}
+
+#tabs>ul>li{
+	padding: 0.5em;
+	display: inline;
+}
+
+#tabs>ul>li:hover{
+	background-color: #C9C9C9;
+}
+
+#tabs>ul>li a{
+	color: #3383BB;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 22pt;
+}
+
+#tabs>ul>li a:hover{
+	color: #EE2222;
+}
+
+#draggable {
+	width: 150px;
+	height: 150px; 
+	padding: 0.5em;
+}
+
+fieldset {
+    border: 0;
+}
+
+label {
+    display: block;
+    margin: 30px 0 0 0;
+}
+
+li.ui-menu-item{
+	display: inline;
+}
+
+.toggler { 
+	width: 500px; 
+	height: 200px; 
+	position: relative; 
+}
+
+#button { 
+	padding: .5em 1em; 
+	text-decoration: none; 
+}
+
+#effect { 
+	width: 240px; 
+	height: 170px; 
+	padding: 0.4em; 
+	position: relative; 
+	background: #fff; 
+}
+
+#effect h3 { 
+	margin: 0; 
+	padding: 0.4em; 
+	text-align: center; 
+}
