@@ -1,0 +1,137 @@
+// question: 0  name: Switch category to $course$/Subsistemas de renderizado
+$CATEGORY: $course$/Tema7 jQuery/Best Practices jQuery
+
+
+// question: 2227  name: -01. Indique cual afirmación...
+::-01. Indique cual afirmación...::[html]Indique cual afirmación es verdadera{
+	~[moodle]No es recomendable usar un CDN para incluir jQuery en una página
+	=[moodle]Es recomendable usar un CDN para incluir jQuery en una página
+}
+
+// question: 2228  name: -02. ¿En que parte de la página...
+::-02. ¿En que parte de la página...::[html]¿En que parte de la página es recomendable incluir los ficheros Jquery?{
+	~[moodle]Al principio
+	~[moodle]Por la mitad
+	~[moodle]En cualquier parte
+	=[moodle]Al final
+}
+
+// question: 2229  name: -03. ¿Cuál de estas afirmaciones...
+::-03. ¿Cuál de estas afirmaciones...::[html]¿Cuál de estas afirmaciones es falsa?{
+	=[moodle]Es recomendable cargar múltiples versiones de jQuery
+	~[moodle]Es recomendable utilizar la última versión de jQuery
+	~[moodle]Al cargar jQuery del CDN es recomendable especificar el número de la versión completa de Jquery
+	~[moodle]No es recomendable usar del CDN el jquery-latest.js
+}
+
+// question: 2230  name: -04. Las variables que almacenan...
+::-04. Las variables que almacenan...::[html]Las variables que almacenan objetos jQuery deben identificarse mediante el carácter $. Indica el código correcto{
+	~[moodle]let $special \= url.test( name );
+	~[moodle]let $unaUrl \= /href|src|style/;
+	~[moodle]let special \= url.test( name );
+	=[moodle]let $unDiv\= $('#unDiv').hide();
+}
+
+// question: 2231  name: -05. Indica la forma más...
+::-05. Indica la forma más...::[html]Indica la forma más correcta de nombrar variables Jquery{
+	~[moodle]let mivariable;
+	~[moodle]let $MiVariable;
+	~[moodle]let miVariable;
+	=[moodle]let $miVariable;
+}
+
+// question: 2232  name: -06. ¿Qué tipo de selector...
+::-06. ¿Qué tipo de selector...::[html]¿Qué tipo de selector es más rápido?{
+	~[moodle]let $productos \= $(".productos");
+	=[moodle]let $productos \= $("\#productos");
+	~[moodle]let $productos \= $("productos");
+}
+
+// question: 2233  name: -07. Al utilizar los selectores...
+::-07. Al utilizar los selectores...::[html]Al utilizar los selectores de clase, ¿cual es más rápido?{
+	~[moodle]let $productos \= $("div.productos");
+	=[moodle]let $productos \= $(".productos");
+	~[moodle]let $productos \= $("productos");
+}
+
+// question: 2234  name: -08. ¿Qué es más rápido en...
+::-08. ¿Qué es más rápido en...::[html]¿Qué es más rápido en selectores tipo Id->Child anidados?{
+	~[moodle]let $idsDeProductos \= $(".id");
+	~[moodle]let $idsDeProductos \= $("\#productos .id");
+	~[moodle]let $idsDeProductos \= $("\#productos div.id");
+	=[moodle]let $idsDeProductos \= $("\#productos").find("div.id");
+}
+
+// question: 2235  name: -09. Según las buenas...
+::-09. Según las buenas...::[html]Según las buenas prácticas ¿cual es más recomendable?{
+	~[moodle]$("div.data .gonzalez");
+	=[moodle]$(".data td.gonzalez");
+}
+
+// question: 2236  name: -10. ¿Cual selector es más...
+::-10. ¿Cual selector es más...::[html]¿Cual selector es más recomendable?{
+	=[moodle]$('div.container > *');
+	~[moodle]$('div.container').children();
+}
+
+// question: 2237  name: -11. A la hora de...
+::-11. A la hora de...::[html]A la hora de seleccionar un Id, ¿cual sería más recomendable?{
+	~[moodle]$('\#outer \#inner');
+	~[moodle]$('div\#inner');
+	~[moodle]$('.outer-container \#inner');
+	=[moodle]$('\#inner');
+}
+
+// question: 2238  name: -12. ¿Cual es más recomendable?...
+::-12. ¿Cual es más recomendable?...::[html]¿Cual es más recomendable?{
+	~[moodle]let $miLista \= $("\#lista"); for (var i \= 0; i < 10000; i++)\{ $myList.append("<li>"+i+"</li>");\}
+	=[moodle]let array \= []; for(var i \= 0; i < 10000; i++)\{ array[i] \= "<li>"+i+"</li>"; \} $myList.html(array.join(''));
+}
+
+// question: 2239  name: -13. Según las buenas prácticas...
+::-13. Según las buenas prácticas...::[html]Según las buenas prácticas en cuanto a funciones ¿cual es más recomendable?{
+	=[moodle]$("\#miEnlace").on("click", function()\{...\});
+	~[moodle]function myLinkClickHandler()\{...\} $("\#myLink").on("click", myLinkClickHandler);
+}
+
+// question: 2240  name: -14. ¿En cuanto al document...
+::-14. En cuanto al document...::[html]En cuanto al document ready ¿cual es más recomendable?{
+	=[moodle]$(document).ready(function()\{...\}
+	~[moodle]$(document).ready(initPage); function initPage()\{...\}
+}
+
+// question: 2241  name: -15. ¿Es recomendable utilizar...
+::-15. ¿Es recomendable utilizar...::[html]¿Es recomendable utilizar delegación de eventos cuando se tiene que adjuntar el mismo evento a varios elementos?.{
+	=[moodle]Sí
+	~[moodle]No
+}
+
+// question: 2242  name: -16. Respecto al encadenamiento...
+::-16. Respecto al encadenamiento...::[html]Respecto al encadenamiento, es recomendable utilizar saltos de línea cada vez que la cadena crece más de 3 enlaces.{
+	=[moodle]Verdadero
+	~[moodle]Falso
+}
+
+// question: 2243  name: -17. Es aceptable almacenar...
+::-17. Es aceptable almacenar...::[html]Es aceptable almacenar en una variable los objetos intermedios cuando el encadenamiento es muy largo.{
+	=[moodle]Verdadero
+	~[moodle]Falso
+}
+
+// question: 2244  name: -18. ¿Cual es más eficiente?...
+::-18. ¿Cual es más eficiente?...::[html]¿Cual es más eficiente?.{
+	=[moodle]$myLink.attr("href", "\#").attr("title", "my link").attr("rel", "external");
+	~[moodle]$myLink.attr(\{ href: "\#", title: "my link", rel: "external" \});
+}
+
+// question: 2245  name: -19. Es recomendable mezclar...
+::-19. Es recomendable mezclar...::[html]Es recomendable mezclar CSS con Jquery{
+	=[moodle]Falso
+	~[moodle]Verdadero
+}
+
+// question: 2246  name: -20. ¿Es recomendable combinar...
+::-20. ¿Es recomendable combinar...::[html]¿Es recomendable combinar Jquery con Javascript nativo cuando sea necesario?.{
+	=[moodle]Sí
+	~[moodle]No
+}
