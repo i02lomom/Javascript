@@ -29,7 +29,7 @@ $CATEGORY: $course$/Tema7 jQuery/Best Practices jQuery
 	~[moodle]let $special \= url.test( name );
 	~[moodle]let $unaUrl \= /href|src|style/;
 	~[moodle]let special \= url.test( name );
-	=[moodle]let $unDiv\= $('#unDiv').hide();
+	=[moodle]let $unDiv\= $('\#unDiv').hide();
 }
 
 // question: 2231  name: -05. Indica la forma más...
@@ -70,8 +70,8 @@ $CATEGORY: $course$/Tema7 jQuery/Best Practices jQuery
 
 // question: 2236  name: -10. ¿Cual selector es más...
 ::-10. ¿Cual selector es más...::[html]¿Cual selector es más recomendable?{
-	=[moodle]$('div.container > *');
-	~[moodle]$('div.container').children();
+	~[moodle]$('div.container > *');
+	=[moodle]$('div.container').children();
 }
 
 // question: 2237  name: -11. A la hora de...
@@ -90,14 +90,14 @@ $CATEGORY: $course$/Tema7 jQuery/Best Practices jQuery
 
 // question: 2239  name: -13. Según las buenas prácticas...
 ::-13. Según las buenas prácticas...::[html]Según las buenas prácticas en cuanto a funciones ¿cual es más recomendable?{
-	=[moodle]$("\#miEnlace").on("click", function()\{...\});
-	~[moodle]function myLinkClickHandler()\{...\} $("\#myLink").on("click", myLinkClickHandler);
+	~[moodle]$("\#miEnlace").on("click", function()\{...\});
+	=[moodle]function myLinkClickHandler()\{...\} $("\#myLink").on("click", myLinkClickHandler);
 }
 
 // question: 2240  name: -14. ¿En cuanto al document...
 ::-14. En cuanto al document...::[html]En cuanto al document ready ¿cual es más recomendable?{
-	=[moodle]$(document).ready(function()\{...\}
-	~[moodle]$(document).ready(initPage); function initPage()\{...\}
+	~[moodle]$(document).ready(function()\{...\}
+	=[moodle]$(document).ready(initPage); function initPage()\{...\}
 }
 
 // question: 2241  name: -15. ¿Es recomendable utilizar...
@@ -120,8 +120,8 @@ $CATEGORY: $course$/Tema7 jQuery/Best Practices jQuery
 
 // question: 2244  name: -18. ¿Cual es más eficiente?...
 ::-18. ¿Cual es más eficiente?...::[html]¿Cual es más eficiente?.{
-	=[moodle]$myLink.attr("href", "\#").attr("title", "my link").attr("rel", "external");
-	~[moodle]$myLink.attr(\{ href: "\#", title: "my link", rel: "external" \});
+	~[moodle]$myLink.attr("href", "\#").attr("title", "my link").attr("rel", "external");
+	=[moodle]$myLink.attr(\{ href: "\#", title: "my link", rel: "external" \});
 }
 
 // question: 2245  name: -19. Es recomendable mezclar...
