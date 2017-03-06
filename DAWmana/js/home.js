@@ -504,7 +504,7 @@ $(function() {
 	let dialogRegistro = $('#dialog-registro');
 	let msgReg = $('#dialog-message');
 
-	$('.registro').on('click', function(evento) {k
+	$('.registro').on('click', function(evento) {
 		evento.preventDefault();
 		$(dialogRegistro).dialog('open');
 	});
