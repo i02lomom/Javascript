@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<title>DAWmana</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/messages_es.js"></script>
+	<script type="text/javascript" src="js/ponente.js"></script>
+	
+</head>
+<body>
+	<noscript>
+		<p>Esta página requiere el uso de JavaScript. Si está deshabilitado, por favor activelo.</p>
+	</noscript>
+	<div id="cookies" class="ui-state-error">
+		<p>Necesita activar las cookies para el correcto funcionamiento de la web. <button type="button" id="aceptar">Aceptar</button></p>
+	</div>
+	<nav>
+		<div id="panel-login">
+			<a href="#" class="login">Usuario</a>
+			<a href="home.html" class="registro">Cerrar sesión</a>
+		</div>
+	</nav>
+
+	<main id="contenido">
+		<section id="perfil">
+			<article>
+				<header>
+					<h2>Perfil de ponente</h2>
+				</header>
+				<div id="tabs">
+					<ul>
+						<li><a href="#datos">Información personal</a></li>
+						<li><a href="#actividades">Actividades</a></li>
+					</ul>
+					<div id="datos">
+						<dl>
+
+						</dl>
+
+						<button type="button" class="modificar">Modificar datos</button>
+						<div id="dialog-mod" class="ui-widget">
+							<form id="form-mod" method="post">
+								<div id="group-form">
+									<p><label for="dnombre">Nombre:</label> <input type="text" name="dnombre" id="dnombre" placeholder="Nombre" required></p>
+								</div>
+								<div id="group-form">
+									<p><label for="dapellidos">Apellidos:</label> <input type="text" name="dapellidos" id="dapellidos" placeholder="Apellidos" required></p>
+								</div>
+								<div id="group-form">
+									<p><label for="empresa">Empresa/organismo de procedencia:</label> <input type="text" name="empresa" id="empresa" placeholder="Empresa/organismo" required></p>
+								</div>
+								<div id="group-form">
+									<p><label for="patrocinador">Posibilidad de patrocinio:</label>
+									<select name="patrocinador" id="patrocinador">
+										<option value="si">Sí</option>
+										<option value="no">No</option>
+									</select></p>
+								</div>
+								<div id="group-form">
+									<p><label for="fechainicio">Desde:</label> <input type="text" name="fechainicio" id="fechainicio" readonly required></p>
+								</div>
+								<div id="group-form">
+									<p><label for="fechafin">Hasta:</label> <input type="text" name="fechafin" id="fechafin" readonly required></p>
+								</div>
+								<div id="group-form">
+									<p><label for="observaciones">Observaciones:</label> <textarea name="observaciones" id="observaciones" rows="5" cols="34"></textarea></p>
+								</div>
+							</form>
+						</div>
+						<div id="message-mod" class="ui-widget">
+							<p>Los datos se han modificado con éxito.</p>
+						</div>
+					</div>
+					<div id="actividades">
+						<dl></dl>
+						<button type="button" class="annadir">Añadir actividad</button>
+						<div id="dialog-act" class="ui-widget">
+							<form id="form-act" method="post">
+								<div id="group-form">
+									<p><label for="pnombre">Nombre:</label> <input type="text" name="pnombre" id="pnombre" placeholder="Nombre" required></p>
+								</div>
+								<div id="group-form">
+									<p><label for="resumen">Descripción breve:</label> <input type="text" name="resumen" id="resumen" placeholder="Descripción breve" required></p>
+								</div>
+								<div id="group-form">
+									<p><label for="descripcion">Descripción extensa:</label> <textarea name="descripcion" id="descripcion" rows="5" cols="50" required></textarea></p>
+								</div>
+								<div id="url">
+									<label for="imagen">URL de la imagen:</label> <input type="url" name="imagen" id="imagen" required>
+								</div>
+								<div id="group-form">
+									<p><label for="pmaterial">Material requerido (ponente):</label>
+									<select name="pmaterial" id="pmaterial">
+										<option value="proyector">Proyector</option>
+										<option value="wifi">Conexión WIFI</option>
+										<option value="ethernet">Conexión Ethernet</option>
+										<option value="software">Software necesario</option>
+									</select></p>
+								</div>
+								<div id="group-form">
+									<p><label for="amaterial">Material requerido (asistentes):</label>
+									<select name="amaterial" id="amaterial">
+										<option value="equipo">Equipo</option>
+										<option value="windows">S.O. Windows</option>
+										<option value="linux">S.O. Linux</option>
+										<option value="eclipse">Eclipse</option>
+										<option value="navegador">Navegador</option>
+										<option value="editor">Editor de textos</option>
+									</select></p>
+								</div>
+								<div id="group-form">
+									<p><label for="numero">Número de asistentes recomendados:</label> <input type="number" name="numero" id="numero" required></p>
+								</div>
+							</form>
+						</div>
+						<div id="message-act" class="ui-widget">
+							<p>La actividad se ha añadido con éxito.</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<p>Realizado por Miguel Angel López Moyano</p>
+	</footer>
+</body>
+</html>

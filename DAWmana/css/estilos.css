@@ -1,0 +1,300 @@
+@font-face {
+	font-family: 'Sosa';
+	src: url('../fonts/sosa-regular-webfont.eot');
+	src: url('../fonts/sosa-regular-webfont.eot?iefix') format('eot'),
+		 url('../fonts/sosa-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/sosa-regular-webfont.woff') format('woff'),
+		 url('../fonts/sosa-regular-webfont.svg') format('svg');
+}
+
+* {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+#actividades>article>h3{
+	padding-top: 50px;
+}
+
+#act1, #act2, #act3, #act4, #act5, #act6, #act7, #act8, #act9, #act10, #act11, #act12, #act13, #act14, #act15, #act16, #act17, #act18,
+ #act19, #act20, #act21, #act22, #act23, #act24, #act25, #act26, #act27, #act28{
+	margin: 0 auto;
+	width: 80%;
+}
+
+.annadir, .modificar {
+	background: #007fff;
+	border: none;
+	color: #FFFFFF;
+}
+
+.arriba {
+	background: #3f51b5;
+	border-radius: 50px;
+	bottom: 1em;
+	color: #FFFFFF;
+	display: none;
+	font-family: 'Sosa';
+	font-size: 18px;
+	font-weight: bold;
+	padding: 1em;
+	position: fixed;
+	right: 1em;
+	text-decoration: none;
+}
+
+.arriba:hover {    
+	background: rgba(255, 255, 255, 0.8);
+	color: #3f51b5;
+	
+}
+
+body {
+	background: #F2F2F2;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	padding: 0.5em 1em;
+}
+
+#cabecera {
+	background: url('../img/gcap.jpg') center center fixed;
+	background-size: cover;
+	height: 1000px;
+}
+
+#cabecera h1, #cabecera h2{
+	color: #FFF;
+	text-shadow: 2px 2px 2px #000;
+}
+
+#cartel {
+	height: 550px;
+	margin: 0 auto;
+}
+
+#concursos {
+	padding: 1em;
+	text-align: justify;
+}
+
+#concursos div {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-right: 8em;
+	padding-left: 8em;
+}
+
+#concursos p {
+	font-size: 16px;
+	padding-top: 1em;
+}
+
+#contenido {
+	margin: 2em auto;
+	width: 90%;
+}
+
+#clasificacion_concurso a {
+    color: #000;
+}
+
+#clasificacion_concurso span {
+	padding-top: 50px;
+	text-align: center;
+}
+
+#cookies {
+	display: none;
+	padding: 0.4em;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index: 2;
+}
+
+#datos dl img{
+	height: 200px;
+	width: 200px;
+	padding-bottom: 0.5em;
+}
+
+#descripcion_concurso a{
+	color: #000;
+}
+
+dl {
+	display: inline-block;
+	float: left;
+	padding: 0 1em;
+	text-align: left;
+	width: 100%;
+}
+
+dt {
+	font-weight: bold;
+	padding-bottom: 0.5em;
+
+}
+
+dd{
+	padding-bottom: 0.5em;
+}
+
+.error{
+	color: red;
+}
+
+footer {
+	background: #3f51b5;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+	color: #FFFFFF;
+	padding: 2em;
+	text-align: center;
+}
+
+h1, h2 {
+	font-size: 45.5px;
+	font-weight: 300;
+}
+
+h3 {
+	text-align: center;
+	margin: 1em;
+	font-weight: 300;
+}
+
+header {
+	padding-top: 4em;
+	text-align: center;
+}
+
+#img {
+	text-align: center;
+	margin: 2em auto auto auto;
+	width: 80%;
+}
+
+#img a {
+	text-decoration: none;
+}
+
+#imagencartel {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
+#img-patrocinadores {
+	margin: 2em auto auto auto;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#img-patrocinadores img {
+	padding: 0.5em;
+}
+
+#inicio {
+	padding-top: 1.5em;
+	text-align: center;
+}
+
+
+
+label, input {
+	display: block;
+	width: 250px;
+}
+
+label {
+	padding-top: 0.5em;
+}
+
+#listado{
+	text-align: center;
+	padding-top: 50px;
+}
+
+#listado a{
+	text-decoration: none;
+	color: #000;
+}
+
+#listado ul li{
+	display:block;
+}
+
+nav {
+	background: #3f51b5;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+nav ul {
+	display: inline-block;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	padding: 1em;
+}
+
+nav ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+nav ul li:hover {
+	background: rgba(255,255,255,1);
+}
+
+nav ul li:hover a {
+	color: #000000;
+}
+
+#panel-login {
+	display: inline-block;
+	float: right;
+	padding: 1em;
+}
+
+#panel-login a {
+	color: #FFFFFF;
+	padding-right: 1em;
+	text-decoration: none;
+}
+
+span{
+	text-align: justify;
+}
+
+#tabs {
+	margin: 2em auto auto auto;
+	width: 70%;
+}
+
+table{
+	margin: 0 auto;
+}
+
+tr{
+	text-align: center;
+}
+
+td {
+	padding-right: 1em;
+	width: 350px;
+}
+
+.video-container {
+	margin: 2em auto auto auto;
+	text-align: center;
+}
